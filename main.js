@@ -29,7 +29,8 @@ function clearInputError(inputElement){
 
 document.addEventListener("DOMContentLoaded", () =>{
     const loginForm = document.querySelector("#login"); 
-    const createAccountForm = document.querySelector("#createAccount"); 
+    const createAccountForm = document.querySelector("#createAccount");
+    
 
     document.querySelector("#linkCreateAccount").addEventListener("click" , e => {
         e.preventDefault(); 
@@ -60,9 +61,16 @@ document.addEventListener("DOMContentLoaded", () =>{
             if (e.target.id === "signupUsername" && e.target.value.length >= 0 && e.target.value.length < 10) {
                 setInputError(inputElement, "Username must be at least 10 characters in length.");
                 
-            };
+            }
+            
+            if(e.target.id ==="emailUsername" && e.target.value.length == 0 ) {
+                setInputError(inputElement, "Email field must be valid")
+            }
+
+
 
         });
+        
 
         inputElement.addEventListener("input", e => {
             e.preventDefault();
