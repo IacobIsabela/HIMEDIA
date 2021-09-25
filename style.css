@@ -1,0 +1,215 @@
+*{
+margin : 0;
+padding: 0; 
+font-family: sans-serif; 
+
+}
+
+body{
+
+ overflow: hidden;
+
+}
+
+.main{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden; 
+        background: repeating-linear-gradient(to right, #e39ae6, #5aa3ec, #d5b2da);
+
+}
+
+nav {
+
+    width :  80%; 
+    position: sticky; 
+    margin : 20px auto;
+    z-index : 1; 
+    display: flex;
+    align-items: center; 
+}
+
+.logo{
+
+    flex-basis: 20%; 
+
+}
+
+.logo i{
+
+    width: 150px;
+    margin-left:-100px;  
+
+
+}
+
+.nav-links{
+
+    flex:1; 
+    text-align: right; 
+
+
+}
+
+.nav-links ul li {
+
+    list-style: none; 
+    display: inline-block; 
+    margin: 0 20px; 
+
+}
+
+.nav-links ul li a{
+
+    color: #fff(37, 31, 22); 
+    text-decoration: none;
+}
+
+.information{
+
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%); 
+}
+
+#circle{
+
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top:0;
+    left: 8%;
+    border-radius:  50%;
+    transform:rotate(0deg);
+    transition: 1s;
+    color: pink; 
+
+
+}
+
+.feature i{
+
+    width: 70px;
+    
+}
+.feature{
+
+    position:absolute;
+    display:flex;
+    color: rgb(87, 82, 82); 
+}
+.feature div{
+    margin-left: 30px;
+}
+.feature div p{
+    margin-top: 10px; 
+}
+.one{
+    top: 490px;
+    right:-30px;
+}
+.two {
+
+    top: 150px;
+    left: 550px;
+    transform: rotate(-90deg);
+}
+.three{
+    bottom:450px; 
+    left: 150px; 
+    transform: rotate(180deg);
+}
+.four{
+
+    bottom: 130px;
+    right: 200px; 
+    transform: rotate(-270deg);
+
+}
+
+.mobile{
+    width:200px;
+    position: absolute; 
+    top:50%;
+    left:35%;
+    transform: translateY(-50%);
+    z-index: 1;  
+    
+}
+.controls{
+    position: absolute; 
+    right: 10%;
+    top:50%;
+    transform: translateY(-50%);
+}
+.controls h3{
+    margin:15px 0;
+    color: #fff;
+}
+#upBTN{
+
+    width:15px;
+    cursor: pointer;
+    color: white; 
+    
+}
+
+#downBTN{
+
+    width:15px;
+    cursor: pointer; 
+    transform: rotate(180deg);
+    color: white; 
+}
+
+.mainHelp{
+
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden; 
+    background: repeating-linear-gradient(to right, #d1c7d1, #9acbfc, #cc9bd3);
+}
+
+
+.navLinkHelp{
+
+    flex:1; 
+    text-align: left; 
+
+
+}
+
+
+.navLinkHelp ul li{
+
+    
+    list-style: none; 
+    display: inline-block; 
+    margin: 10 190px; 
+
+
+
+}
+
+.navLinkHelp ul li a {
+
+    color: #fff(37, 31, 22); 
+    text-decoration: none;
+
+}
+
+.mainLogIn{
+
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden; 
+    background: repeating-linear-gradient(to right, #d1c7d1, #9acbfc, #cc9bd3);
+
+}
+

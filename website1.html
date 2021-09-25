@@ -1,0 +1,126 @@
+<html>
+  
+
+
+
+    <head>
+         <title>HIMEDIA</title>
+         <link rel = "stylesheet"  href = "style.css">
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+         <meta name= "viewport" content = "width = device-width, initial-scale = 1.0">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+           </head>
+        
+    </head>    
+         <body>
+         <div class = "main">
+            <nav>
+                <div class = "logo"> 
+                    <i class="fas fa-laptop-house fa-7x"></i>
+
+
+
+                </div>
+                <div class = "nav-links"> 
+                    <ul>
+                        <li><a href ="loginpage.html" target="_blank">Log in</a> </li>
+                        <li><a href ="helppage.html" target= "_blank">About</a> </li>
+                        <li><a href ="#">Messages</a> </li>
+                        <li><a href ="#">Help</a> </li>
+                    </ul>
+                </div>
+                    
+                </div>
+            </nav>   
+
+            <div class = "information">
+                <div class = "overlay"></div>
+                <i class="fas fa-dna fa-x4" class="mobile"></i>
+
+                <div id = "circle">
+                    <div class ="feature one">
+                        <i class="fas fa-keyboard fa-4x"></i>
+                        <div>
+                            <h1>Post</h1>
+                            <p>Make new friends!</p>
+                        </div>
+                    </div>
+                         
+
+
+                    <div class ="feature two">
+                        <i class="fas fa-images fa-4x"></i>
+                        <div><h1>Talk</h1><p>Share your thoughts</p> </div>
+                    </div>
+
+
+                    <div class ="feature three">
+                        <i class="fas fa-inbox fa-4x"></i>
+                        <div><h1>Pictures</h1> <p>show your friends<br> your life experiences!</p></div>
+
+                    </div>
+
+                    <div class ="feature four">
+                        <i class="fas fa-comments fa-4x"></i>
+                        <div><h1>Home</h1> <p>refresh your page <br> and see what's new. </p></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class = "controls">
+                    <i class="fas fa-chevron-down" id="upBTN"></i>
+                    <h3>Activites</h3>
+                    <i class="fas fa-chevron-down" id="downBTN"></i>
+            </div>
+
+         </div>
+
+         <script>
+
+             var circle = document.getElementById("circle");
+             var upBTN = document.getElementById("upBTN");
+             var downBTN = document.getElementById("downBTN");
+
+             var rotateValue = circle.style.transform; 
+             var rotateSum;
+
+             upBTN.onclick = function( ){
+
+                 rotateSum = rotateValue + "rotate(-90deg)"; 
+                 circle.style.transform = rotateSum; 
+                 rotateValue = rotateSum;
+             }
+
+             downBTN.onclick = function( ){
+
+                rotateSum = rotateValue + "rotate(90deg)"; 
+                circle.style.transform = rotateSum; 
+                rotateValue = rotateSum;
+            }
+
+             
+             
+         </script>
+         
+         
+
+
+
+
+        </body>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+</html>
+
